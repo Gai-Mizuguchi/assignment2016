@@ -28,10 +28,6 @@ for i in range(len(sentences)):
 dic = shelve.open('shelve_test')
 dic.update(word_index)
 
-#for k,v in sorted(word_count.items(), key = lambda x:x[1], reverse = True):
-
- #   print(k, v)
-
 for index in word_index:
     bow_vector[dic[index]]=word_count[index]
 
